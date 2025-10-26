@@ -1,0 +1,43 @@
+.main-header {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e5e7eb;
+  gap: 1rem;
+}
+
+.header-empty {
+  justify-content: center;
+}
+
+.header-empty > * {
+  display: none;
+}
+
+.text-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.progress-bar-container {
+  flex-grow: 1;
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 1rem;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #4ade80;
+  transition: width 0.3s ease;
+}

@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  height: 90vh;
+  padding: 40px;
+  gap: 40px;
+  box-sizing: border-box;
+  
+}
+
+/* 5대5 비율 설정 */
+.question-section {
+  width : 30%;
+  height: 70%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.result-section {
+  width: 30%;
+  height: 70%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+/* 질문 항목 간격 + 글씨 크기 확대 */
+.q {
+  margin-bottom: 24px;
+  font-size: 18px; /* 🔥 크기 키움 */
+}
+
+label {
+  font-weight: 500;
+  font-size: 18px; /* 🔥 라벨 글씨도 키움 */
+}
+
+.result-section h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.result-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.result-section li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.page-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/background.png") !important; /* <- 여기에 넣고 싶은 이미지 경로 */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* 투명도 조절 */
+  z-index: -1;
+  pointer-events: none;
+}

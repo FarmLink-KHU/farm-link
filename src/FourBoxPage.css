@@ -1,0 +1,233 @@
+/* FourBoxPage.css */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 1rem;
+}
+
+.content-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* updated from 0 to 2rem for spacing */
+  margin: 0;
+  padding: 0;
+}
+
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(2, max-content);
+  gap: 1.5rem;
+  transition: transform 0.5s ease;
+  margin: 0 !important;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.box-grid.box-entered {
+  animation: box-fade-in 0.6s ease forwards;
+}
+
+@keyframes box-fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box-grid.with-popup {
+  transform: translateX(-30px);
+}
+
+.box {
+  width: 160px;
+  height: 160px;
+  background-color: #f0f0f0;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.box-image {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.popup {
+  width: 260px;
+  padding: 1rem;
+  border-left: 2px solid #ddd;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
+}
+
+.popup-slide-in {
+  animation: popup-slide-in 0.4s ease forwards;
+}
+
+.popup-leave-up,
+.popup-leave-close {
+  animation: popup-leave-up 0.4s ease forwards;
+}
+
+@keyframes popup-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popup-leave-up {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
+.popup-header button {
+  background: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+
+/* 테두리 색상 구분 */
+.box.highlighted-box-green {
+  border: 3px solid green !important;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
+}
+
+.box.highlighted-box-red {
+  border: 3px solid red !important;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+
+
+.box-header-label {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  margin-top: 8px;
+  color: #333;
+}
+
+.grid-label {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px 0 20px;
+  color: #333;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 제목 + 상태는 위쪽 정렬 */
+  gap: 12px;
+}
+
+.popup-title-group {
+  display: flex;
+  flex-direction: column; /* 제목과 상태 세로로 정렬 */
+}
+
+.popup-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.buildable-label {
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.buildable-label.green {
+  color: green;
+}
+
+.buildable-label.red {
+  color: red;
+}
+
+.region-label {
+  position: absolute;
+  top: 120px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  z-index: 10;
+}
+
+
+.region-type {
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.region-type.green {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.region-type.blue {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.region-type.red {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.region-type.gray {
+  background-color: #eeeeee;
+  color: #555;
+}
+
