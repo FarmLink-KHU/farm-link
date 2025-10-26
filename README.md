@@ -1,8 +1,9 @@
-# Farm Link
+<img width="1024" height="1024" alt="cute" src="https://github.com/user-attachments/assets/35e15293-6ef3-4c37-820a-3749e96c99d1" /># Farm Link
 
 <div align="center">
 
-![Farm Link Logo](public/logo.png)
+<img width="1024" height="1024" alt="cute" src="https://github.com/user-attachments/assets/82b28ba7-23c2-491f-ada0-a8f1152fa3c8" />
+
 
 **스마트팜 설치 가능 여부를 실시간으로 확인하는 서비스**
 
