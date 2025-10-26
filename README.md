@@ -21,7 +21,7 @@
 
 <div align="center">
 
-![Farm Link 메인 서비스](docs/main-service-screenshot.png)
+![Farm Link 메인 서비스](https://github.com/user-attachments/assets/cad5bc46-5f25-4e88-a5b0-71c0e0bd9f44)
 
 *개발제한구역(그린벨트) 지역의 스마트팜 시설별 허용 여부 예시*
 
