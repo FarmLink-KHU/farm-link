@@ -4,8 +4,8 @@
 
 **스마트팜 설치 가능 여부를 실시간으로 확인하는 서비스**
 
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-6DB33F?style=flat-square&logo=spring&logoColor=white)](https://spring.io/projects/spring-boot)
+[![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.7-6DB33F?style=flat-square&logo=spring&logoColor=white)](https://spring.io/projects/spring-boot)
 [![H2 Database](https://img.shields.io/badge/H2-Database-1E90FF?style=flat-square&logo=h2&logoColor=white)](https://www.h2database.com/)
 [![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D?style=flat-square&logo=swagger&logoColor=white)](https://swagger.io/)
 
@@ -72,17 +72,18 @@
 ## 기술 스택
 
 ### Frontend
-- **React 18.2.0** - 사용자 인터페이스
-- **Vite** - 빌드 도구 및 개발 서버
-- **React Router** - 페이지 라우팅
+- **React 19.1.0** - 사용자 인터페이스
+- **Vite 6.3.5** - 빌드 도구 및 개발 서버
+- **React Router DOM 7.6.0** - 페이지 라우팅
+- **Framer Motion 12.10.5** - 애니메이션
 - **CSS3** - 스타일링
 
 ### Backend
-- **Spring Boot 3.2.0** - REST API 서버
+- **Spring Boot 3.5.7** - REST API 서버
 - **Java 17** - 백엔드 개발 언어
 - **Gradle** - 빌드 도구
 - **H2 Database** - 인메모리 데이터베이스
-- **SpringDoc OpenAPI** - API 문서화 (Swagger UI)
+- **SpringDoc OpenAPI 2.2.0** - API 문서화 (Swagger UI)
 
 ### External APIs
 - **공공데이터포털 주소 API** - 주소 검증 및 지역 정보 조회
